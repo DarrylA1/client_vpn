@@ -17,3 +17,8 @@ variable "vpc_id" {
   type        = string
   description = "The id of the vpc for the account"
 }
+
+variable "sg_id" {
+  type        = list(any)
+  description = "The id of the default security group in the account"
+}
